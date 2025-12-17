@@ -1,0 +1,71 @@
+{
+  "posts": [
+    {
+      "id": "reduzir-custo-comercial-automacao",
+      "title": "Como Reduzir o Custo Comercial em 50% com Automação",
+      "slug": "reduzir-custo-comercial-automacao",
+      "category": "Automação",
+      "date": "2024-01-15",
+      "readTime": 5,
+      "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=400&fit=crop",
+      "excerpt": "Descubra estratégias práticas para reduzir custos operacionais do seu time de vendas usando automação e IA. Casos reais e resultados mensuráveis.",
+      "content": "blog/reduzir-custo-comercial-automacao.html"
+    },
+    {
+      "id": "agentes-ia-qualificacao-leads",
+      "title": "Agentes de IA: O Futuro da Qualificação de Leads",
+      "slug": "agentes-ia-qualificacao-leads",
+      "category": "Inteligência Artificial",
+      "date": "2024-01-10",
+      "readTime": 7,
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
+      "excerpt": "Entenda como agentes de IA estão revolucionando a qualificação de leads, aumentando a eficiência e melhorando a conversão do funil de vendas.",
+      "content": "blog/agentes-ia-qualificacao-leads.html"
+    },
+    {
+      "id": "metodo-arco-framework",
+      "title": "Método A.R.C.O.: Um Framework para Transformação Comercial",
+      "slug": "metodo-arco-framework",
+      "category": "Metodologia",
+      "date": "2024-01-05",
+      "readTime": 6,
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop",
+      "excerpt": "Conheça o framework A.R.C.O. desenvolvido pela TYR para transformar processos comerciais com automação e IA de forma estruturada e eficiente.",
+      "content": "blog/metodo-arco-framework.html"
+    },
+    {
+      "id": "integracao-crm-automacao-dados",
+      "title": "Integração CRM: Automatize Seus Dados Comerciais",
+      "slug": "integracao-crm-automacao-dados",
+      "category": "Integração",
+      "date": "2023-12-28",
+      "readTime": 4,
+      "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=400&fit=crop",
+      "excerpt": "Saiba como manter seu CRM sempre atualizado automaticamente, eliminando trabalho manual e garantindo dados precisos para tomada de decisão.",
+      "content": "blog/integracao-crm-automacao-dados.html"
+    },
+    {
+      "id": "automatizando-follow-ups-conversao",
+      "title": "Automatizando Follow-ups: Aumente sua Taxa de Conversão",
+      "slug": "automatizando-follow-ups-conversao",
+      "category": "SDR",
+      "date": "2023-12-20",
+      "readTime": 8,
+      "image": "https://images.unsplash.com/photo-1553484771-371a605b060b?w=800&h=400&fit=crop",
+      "excerpt": "Descubra como automações inteligentes de follow-up podem aumentar significativamente sua taxa de conversão sem aumentar o esforço manual.",
+      "content": "blog/automatizando-follow-ups-conversao.html"
+    },
+    {
+      "id": "medir-roi-automacao-vendas",
+      "title": "Como Medir o ROI de Automação em Vendas",
+      "slug": "medir-roi-automacao-vendas",
+      "category": "ROI",
+      "date": "2023-12-15",
+      "readTime": 6,
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
+      "excerpt": "Métricas essenciais para medir o retorno sobre investimento em automação comercial. Saiba quais KPIs acompanhar e como calcular o ROI real.",
+      "content": "blog/medir-roi-automacao-vendas.html"
+    }
+  ]
+}
+

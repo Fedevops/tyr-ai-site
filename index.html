@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYR | Consultoria AI-First para Vendas | Reduza Custos e Aumente Eficiência</title>
+    <meta name="description" content="TYR - Automação e IA aplicada ao processo de vendas B2B. Reduza custo comercial em até 50% e aumente eficiência do time em 30-60 dias. Método A.R.C.O.">
+    <meta name="keywords" content="automação vendas, IA vendas, consultoria vendas B2B, redução custo comercial, automação comercial, inteligência artificial vendas, método ARCO, SDR automação">
+    <meta name="author" content="TYR">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tyr.com.br/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tyr.com.br/">
+    <meta property="og:title" content="TYR | Consultoria AI-First para Vendas">
+    <meta property="og:description" content="Reduza custo comercial em até 50% com automação e IA. Resultados mensuráveis em 30-60 dias.">
+    <meta property="og:image" content="https://tyr.com.br/LOGO AZUL 1.svg.svg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tyr.com.br/">
+    <meta property="twitter:title" content="TYR | Consultoria AI-First para Vendas">
+    <meta property="twitter:description" content="Reduza custo comercial em até 50% com automação e IA.">
+    <meta property="twitter:image" content="https://tyr.com.br/LOGO AZUL 1.svg.svg">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TYR",
+      "url": "https://tyr.com.br",
+      "logo": "https://tyr.com.br/LOGO AZUL 1.svg.svg",
+      "description": "Consultoria AI-First para Vendas B2B. Automação e IA aplicada ao processo comercial.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/tyr",
+        "https://twitter.com/tyr",
+        "https://www.instagram.com/tyr"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Consultoria em Automação e IA para Vendas",
+      "provider": {
+        "@type": "Organization",
+        "name": "TYR"
+      },
+      "areaServed": "BR",
+      "description": "Automação e IA aplicada ao processo de vendas B2B. Redução de custo comercial e aumento de eficiência."
+    }
+    </script>
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="LOGO AZUL 1.svg.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #0066CC;
+            --primary-dark: #0052A3;
+            --secondary-color: #1A1A1A;
+            --text-color: #333333;
+            --text-light: #666666;
+            --bg-light: #F8F9FA;
+            --bg-white: #FFFFFF;
+            --accent-color: #00A86B;
+            --border-color: #E0E0E0;
+            --danger-color: #E63946;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header/Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 16px 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            height: 60px;
+        }
+
+        .logo img {
+            height: 100px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
+            color: white;
+            padding: 180px 0 100px;
+            position: relative;
+            overflow: hidden;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255,255,255,0.08) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            text-align: left;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .subheadline {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            text-align: left;
+            opacity: 0.95;
+            max-width: 550px;
+        }
+
+        .hero-image-container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+            transition: transform 0.3s ease;
+        }
+
+        .hero-image:hover {
+            transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            text-align: left;
+        }
+
+        .hero-stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .hero-stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-badge i {
+            color: var(--accent-color);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--bg-white);
+            color: var(--primary-color);
+            padding: 18px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            margin-left: 16px;
+        }
+
+        .cta-button-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* Visual Elements */
+        .visual-element {
+            position: absolute;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        .circle {
+            border-radius: 50%;
+            background: white;
+        }
+
+        .square {
+            border-radius: 8px;
+            background: white;
+            transform: rotate(45deg);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .section-alt {
+            background: var(--bg-light);
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 16px;
+            color: var(--secondary-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            margin: 16px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 20px;
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Icon Styles */
+        .icon-wrapper {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 28px;
+            box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+        }
+
+        .icon-wrapper.danger {
+            background: linear-gradient(135deg, #E63946, #C1121F);
+            box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
+        }
+
+        .icon-wrapper.success {
+            background: linear-gradient(135deg, var(--accent-color), #008F5B);
+            box-shadow: 0 4px 12px rgba(0, 168, 107, 0.3);
+        }
+
+        /* Image Styles */
+        .section-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            margin: 40px auto;
+            display: block;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin: 60px 0;
+        }
+
+        .two-column img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Problema Section */
+        .problema-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .problema-item {
+            background: var(--bg-white);
+            padding: 32px;
+            border-radius: 12px;
+            border-left: 4px solid var(--danger-color);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .problema-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .problema-item h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .problema-item p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Solução Section */
+        .solucao-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .solucao-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin: 60px 0;
+            flex-wrap: wrap;
+        }
+
+        .solucao-card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+        }
+
+        .solucao-card h3 {
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: var(--secondary-color);
+        }
+
+        .solucao-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-color);
+            margin-bottom: 24px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(0, 102, 204, 0.1), rgba(0, 168, 107, 0.1));
+            border: 2px solid var(--primary-color);
+            border-radius: 12px;
+            padding: 32px;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .highlight-box i {
+            font-size: 32px;
+            color: var(--primary-color);
+        }
+
+        .highlight-box p {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+        /* Framework Section */
+        .framework-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .framework-item {
+            background: var(--bg-white);
+            padding: 32px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .framework-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        .framework-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .framework-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border-radius: 50%;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+        }
+
+        .framework-item h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--secondary-color);
+        }
+
+        .framework-item p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Infográfico */
+        .infographic {
+            background: white;
+            padding: 60px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            margin: 60px 0;
+        }
+
+        .infographic-title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: var(--secondary-color);
+        }
+
+        .process-flow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            position: relative;
+        }
+
+        .process-step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            position: relative;
+        }
+
+        .process-step::after {
+            content: '→';
+            position: absolute;
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 32px;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .process-step:last-child::after {
+            display: none;
+        }
+
+        .process-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 32px;
+            box-shadow: 0 4px 16px rgba(0, 102, 204, 0.3);
+        }
+
+        .process-step h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--secondary-color);
+        }
+
+        .process-step p {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* Entregáveis Section */
+        .entregaveis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .entregavel-item {
+            background: var(--bg-white);
+            padding: 32px;
+            border-radius: 12px;
+            border-top: 4px solid var(--accent-color);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+
+        .entregavel-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .entregavel-item h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .entregavel-item p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Resultados Section */
+        .resultados-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .resultado-item {
+            text-align: center;
+            padding: 40px 32px;
+            background: linear-gradient(135deg, white, var(--bg-light));
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .resultado-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+        }
+
+        .resultado-item:hover {
+            transform: translateY(-6px);
+        }
+
+        .resultado-number {
+            font-size: 56px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+            line-height: 1;
+        }
+
+        .resultado-item h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--secondary-color);
+        }
+
+        .resultado-item p {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        /* Diagnóstico Section */
+        .diagnostico-box {
+            max-width: 800px;
+            margin: 48px auto 0;
+            background: white;
+            padding: 48px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .diagnostico-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 16px 16px 0 0;
+        }
+
+        .diagnostico-box h3 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: var(--secondary-color);
+            text-align: center;
+        }
+
+        .diagnostico-list {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .diagnostico-list li {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 16px;
+            line-height: 1.6;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .diagnostico-list li:last-child {
+            border-bottom: none;
+        }
+
+        .diagnostico-list li i {
+            color: var(--accent-color);
+            font-size: 20px;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .diagnostico-list li strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* Formulário de Contato */
+        .contact-form-section {
+            background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 48px;
+            border-radius: 16px;
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container h2 {
+            color: var(--secondary-color);
+            font-size: 32px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .form-container p {
+            color: var(--text-light);
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
+        }
+
+        .form-submit:active {
+            transform: translateY(0);
+        }
+
+        .form-message {
+            margin-top: 20px;
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+            display: none;
+        }
+
+        .form-message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            display: block;
+        }
+
+        .form-message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            display: block;
+        }
+
+        /* CTA Final Section */
+        .cta-final {
+            background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-final::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .cta-final h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-final p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-white);
+            margin-bottom: 16px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: box-shadow 0.3s;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .faq-question {
+            padding: 24px;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--secondary-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: color 0.2s;
+        }
+
+        .faq-question:hover {
+            color: var(--primary-color);
+        }
+
+        .faq-question i {
+            color: var(--primary-color);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 24px 24px;
+            color: var(--text-light);
+            line-height: 1.6;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--secondary-color);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .footer p {
+            opacity: 0.8;
+            font-size: 14px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .social-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Blog Section */
+        .blog-section {
+            background: var(--bg-light);
+            padding: 80px 0;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .blog-meta span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .blog-card h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--secondary-color);
+            line-height: 1.3;
+        }
+
+        .blog-card p {
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .blog-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: gap 0.2s;
+        }
+
+        .blog-link:hover {
+            gap: 12px;
+        }
+
+        .blog-tag {
+            display: inline-block;
+            background: rgba(0, 102, 204, 0.1);
+            color: var(--primary-color);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero {
+                padding: 140px 0 80px;
+                min-height: auto;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+                text-align: center;
+            }
+
+            .hero .subheadline {
+                font-size: 18px;
+                text-align: center;
+                max-width: 100%;
+            }
+
+            .hero-image {
+                transform: none;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .hero-stat {
+                text-align: center;
+            }
+
+            .hero-badge {
+                margin: 0 auto 24px;
+            }
+
+            .hero-ctas {
+                justify-content: center;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .cta-button-secondary {
+                margin-left: 0;
+                margin-top: 16px;
+                display: block;
+            }
+
+            .cta-final h2 {
+                font-size: 28px;
+            }
+
+            .diagnostico-box {
+                padding: 32px 24px;
+            }
+
+            .form-container {
+                padding: 32px 24px;
+            }
+
+            .process-flow {
+                flex-direction: column;
+            }
+
+            .process-step::after {
+                content: '↓';
+                right: 50%;
+                top: auto;
+                bottom: -30px;
+                transform: translateX(50%);
+            }
+
+            .infographic {
+                padding: 32px 24px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo"><img src="LOGO AZUL 1.svg.svg" alt="TYR Logo"></a>
+                <ul class="nav-links">
+                    <li><a href="#problema">Problema</a></li>
+                    <li><a href="#solucao">Solução</a></li>
+                    <li><a href="#framework">Método</a></li>
+                    <li><a href="#resultados">Resultados</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#agendar">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-rocket"></i>
+                        <span>Transformação Comercial com IA</span>
+                    </div>
+                    <h1>Reduza o Custo Comercial em até 50% com Automação e IA</h1>
+                    <p class="subheadline">TYR automatiza seu processo de vendas e pré-vendas com inteligência artificial. Resultados mensuráveis em 30-60 dias usando nosso método A.R.C.O.</p>
+                    
+                    <div class="hero-ctas">
+                        <a href="#agendar" class="cta-button"><i class="fas fa-calendar-check"></i> Agendar Diagnóstico AI-First</a>
+                        <a href="#como-funciona" class="cta-button cta-button-secondary"><i class="fas fa-play-circle"></i> Ver Como Funciona</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">+40%</span>
+                            <span class="hero-stat-label">Produtividade</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">-50%</span>
+                            <span class="hero-stat-label">Custo Comercial</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">30-60</span>
+                            <span class="hero-stat-label">Dias para Resultados</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image-container">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="Automação e IA em vendas" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema Section -->
+    <section class="section" id="problema">
+        <div class="container">
+            <h2 class="section-title">Seu Time de Vendas Está Perdendo Tempo e Dinheiro</h2>
+            <p class="section-subtitle">Problemas comuns que impactam diretamente seus resultados e custos</p>
+            
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=400&fit=crop" alt="Time de vendas trabalhando" class="section-image">
+            </div>
+            
+            <div class="problema-grid">
+                <div class="problema-item">
+                    <div class="icon-wrapper danger">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3><i class="fas fa-exclamation-circle" style="color: var(--danger-color);"></i> Follow-up Manual e Inconsistente</h3>
+                    <p>Seu time gasta horas fazendo follow-ups manuais que poderiam ser automatizados. Leads quentes esfriam enquanto esperam contato.</p>
+                </div>
+                <div class="problema-item">
+                    <div class="icon-wrapper danger">
+                        <i class="fas fa-user-times"></i>
+                    </div>
+                    <h3><i class="fas fa-exclamation-circle" style="color: var(--danger-color);"></i> Leads Mal Qualificados</h3>
+                    <p>SDRs perdem tempo com prospects que não têm fit. Falta de qualificação adequada antes do primeiro contato gera baixa conversão.</p>
+                </div>
+                <div class="problema-item">
+                    <div class="icon-wrapper danger">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3><i class="fas fa-exclamation-circle" style="color: var(--danger-color);"></i> CRM Desorganizado e Incompleto</h3>
+                    <p>Dados espalhados, informações desatualizadas e falta de visibilidade real do pipeline. Decisões baseadas em intuição, não em dados.</p>
+                </div>
+                <div class="problema-item">
+                    <div class="icon-wrapper danger">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3><i class="fas fa-exclamation-circle" style="color: var(--danger-color);"></i> Alto Custo por Venda</h3>
+                    <p>CAC elevado por causa de processos ineficientes. Muito tempo gasto em tarefas repetitivas que não geram receita.</p>
+                </div>
+                <div class="problema-item">
+                    <div class="icon-wrapper danger">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3><i class="fas fa-exclamation-circle" style="color: var(--danger-color);"></i> Falta de Escalabilidade</h3>
+                    <p>Para crescer, você precisa contratar mais pessoas. Mas o modelo não escala: mais pessoas = mais custos, sem ganho proporcional de eficiência.</p>
+                </div>
+                <div class="problema-item">
+                    <div class="icon-wrapper danger">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <h3><i class="fas fa-exclamation-circle" style="color: var(--danger-color);"></i> Visibilidade Limitada do Pipeline</h3>
+                    <p>Dificuldade para prever receita e identificar gargalos. Gestores não sabem onde focar esforços para melhorar resultados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solução Section -->
+    <section class="section section-alt" id="solucao">
+        <div class="container">
+            <h2 class="section-title">Automação e IA Aplicadas Diretamente ao Processo de Vendas</h2>
+            <p class="section-subtitle">Não vendemos ferramentas. Entregamos processos eficientes que geram resultados mensuráveis.</p>
+            
+            <div class="two-column">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop" alt="Inteligência Artificial e Automação">
+                </div>
+                <div>
+                    <h3 style="font-size: 28px; margin-bottom: 20px; color: var(--secondary-color);">Por que escolher TYR?</h3>
+                    <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;">Nossa abordagem única combina expertise em vendas B2B com tecnologia de ponta em IA e automação.</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 12px 0; display: flex; align-items: start; gap: 12px;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); font-size: 20px; margin-top: 2px;"></i>
+                            <span>Desenvolvemos as aplicações e entregamos de ponta a ponta</span>
+                        </li>
+                        <li style="padding: 12px 0; display: flex; align-items: start; gap: 12px;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); font-size: 20px; margin-top: 2px;"></i>
+                            <span>Desenhamos soluções customizadas para sua realidade operacional</span>
+                        </li>
+                        <li style="padding: 12px 0; display: flex; align-items: start; gap: 12px;">
+                            <i class="fas fa-check-circle" style="color: var(--accent-color); font-size: 20px; margin-top: 2px;"></i>
+                            <span>Foco em resultados mensuráveis e ROI</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="solucao-content">
+                <p>Utilizamos inteligência artificial e automação para transformar seu processo comercial. Agentes de IA qualificam leads, fazem follow-ups inteligentes e mantêm seu CRM atualizado automaticamente.</p>
+                <p>Nós desenvolvemos as aplicações. Desenhamos a solução e entregamos de ponta a ponta, reduzindo o trabalho manual do seu time e permitindo que SDRs e vendedores se concentrem no que realmente importa: fechar negócios.</p>
+                
+                <div class="solucao-visual">
+                    <div class="solucao-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Agentes de IA</h3>
+                        <p>Automação inteligente que trabalha 24/7</p>
+                    </div>
+                    <div class="solucao-card">
+                        <div class="icon-wrapper success">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Resultados Mensuráveis</h3>
+                        <p>Métricas claras de performance e ROI</p>
+                    </div>
+                    <div class="solucao-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Processos Otimizados</h3>
+                        <p>Fluxos eficientes e escaláveis</p>
+                    </div>
+                </div>
+                
+                <div class="highlight-box">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>✨ Não vendemos software. Desenhamos a solução e entregamos processos automatizados de ponta a ponta que funcionam dentro da sua realidade operacional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Framework Section -->
+    <section class="section" id="framework">
+        <div class="container">
+            <h2 class="section-title">Método A.R.C.O.</h2>
+            <p class="section-subtitle">Um framework claro e estruturado com começo, meio e fim. Sem promessas vazias.</p>
+            
+            <!-- Infográfico do Processo -->
+            <div class="infographic">
+                <h3 class="infographic-title">Como Funciona o Método A.R.C.O.</h3>
+                <div class="process-flow">
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>Analisar</h4>
+                        <p>Mapeamos seu processo atual e identificamos oportunidades</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <h4>Redesenhar</h4>
+                        <p>Projetamos o processo ideal com IA integrada</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Construir</h4>
+                        <p>Desenvolvemos automações customizadas</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Operar</h4>
+                        <p>Implementamos e garantimos resultados</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Entregáveis Section -->
+    <section class="section section-alt" id="entregaveis">
+        <div class="container">
+            <h2 class="section-title">O Que Você Recebe</h2>
+            <p class="section-subtitle">Entregáveis práticos e funcionais, prontos para gerar resultados</p>
+            
+            <div class="entregaveis-grid">
+                <div class="entregavel-item">
+                    <h3><i class="fas fa-user-check" style="color: var(--accent-color);"></i> Agentes de IA para Qualificação</h3>
+                    <p>Agentes inteligentes que qualificam leads automaticamente, fazem perguntas certas e identificam oportunidades reais antes do primeiro contato humano.</p>
+                </div>
+                <div class="entregavel-item">
+                    <h3><i class="fas fa-sync-alt" style="color: var(--accent-color);"></i> Automações de Follow-up</h3>
+                    <p>Sistemas que fazem follow-ups inteligentes e personalizados, no momento certo, com a mensagem certa. Sem perder nenhum lead quente.</p>
+                </div>
+                <div class="entregavel-item">
+                    <h3><i class="fas fa-plug" style="color: var(--accent-color);"></i> Integração com CRM</h3>
+                    <p>Seu CRM atualizado automaticamente com dados qualificados. Visibilidade completa do pipeline sem trabalho manual.</p>
+                </div>
+                <div class="entregavel-item">
+                    <h3><i class="fas fa-chart-bar" style="color: var(--accent-color);"></i> Dashboards e Métricas</h3>
+                    <p>Visão clara de performance, custos e resultados. Métricas que importam para tomar decisões baseadas em dados.</p>
+                </div>
+                <div class="entregavel-item">
+                    <h3><i class="fas fa-wallet" style="color: var(--accent-color);"></i> Controle de Custo Comercial</h3>
+                    <p>Monitoramento automático de CAC, custo por lead qualificado e eficiência do time. Saiba exatamente onde está gastando e onde está ganhando.</p>
+                </div>
+                <div class="entregavel-item">
+                    <h3><i class="fas fa-file-alt" style="color: var(--accent-color);"></i> Processo Documentado</h3>
+                    <p>Todo o processo mapeado e documentado. Seu time sabe exatamente como funciona e como operar de forma eficiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados Section -->
+    <section class="section" id="resultados">
+        <div class="container">
+            <h2 class="section-title">Resultados Esperados</h2>
+            <p class="section-subtitle">Métricas realistas baseadas em implementações reais</p>
+            
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop" alt="Gráficos e métricas de resultados" class="section-image">
+            </div>
+            
+            <div class="resultados-grid">
+                <div class="resultado-item">
+                    <div class="resultado-number">+40%</div>
+                    <h3><i class="fas fa-arrow-up" style="color: var(--accent-color);"></i> Aumento de Produtividade</h3>
+                    <p>Seu time foca em atividades de alto valor, enquanto tarefas repetitivas são automatizadas</p>
+                </div>
+                <div class="resultado-item">
+                    <div class="resultado-number">-50%</div>
+                    <h3><i class="fas fa-arrow-down" style="color: var(--accent-color);"></i> Redução de Esforço Manual</h3>
+                    <p>Menos trabalho manual significa mais tempo para fechar negócios e menos custos operacionais</p>
+                </div>
+                <div class="resultado-item">
+                    <div class="resultado-number">+35%</div>
+                    <h3><i class="fas fa-chart-line" style="color: var(--accent-color);"></i> Ganho de Eficiência</h3>
+                    <p>Processos otimizados geram mais resultados com os mesmos recursos ou menos</p>
+                </div>
+                <div class="resultado-item">
+                    <div class="resultado-number">30-60</div>
+                    <h3><i class="fas fa-calendar-alt" style="color: var(--accent-color);"></i> Dias para Resultados</h3>
+                    <p>Primeiros resultados mensuráveis aparecem entre 30 e 60 dias após a implementação</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diagnóstico Section -->
+    <section class="section section-alt" id="como-funciona">
+        <div class="container">
+            <h2 class="section-title">Como Funciona o Diagnóstico AI-First</h2>
+            <p class="section-subtitle">Um diagnóstico completo que identifica oportunidades reais de automação e IA no seu processo comercial</p>
+            
+            <div class="diagnostico-box">
+                <h3><i class="fas fa-clipboard-check"></i> O Que Você Recebe</h3>
+                <ul class="diagnostico-list">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Análise completa do processo atual:</strong> Mapeamos seu funil de vendas, identificamos gargalos e oportunidades de melhoria.
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Identificação de pontos de automação:</strong> Definimos onde IA e automação podem gerar maior impacto e ROI.
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Roadmap de implementação:</strong> Plano claro e priorizado com etapas, prazos e investimentos necessários.
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Projeção de resultados:</strong> Estimativas realistas de ganhos de eficiência, redução de custos e aumento de produtividade.
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Recomendações técnicas:</strong> Especificações de soluções, integrações necessárias e arquitetura proposta.
+                        </div>
+                    </li>
+                </ul>
+                <p style="text-align: center; font-size: 18px; color: var(--text-color); margin-top: 32px;">
+                    <strong><i class="fas fa-clock"></i> Duração:</strong> 2-3 semanas | <strong><i class="fas fa-file-pdf"></i> Entrega:</strong> Documento completo com análise e recomendações
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section class="contact-form-section" id="agendar">
+        <div class="container">
+            <div class="form-container">
+                <h2><i class="fas fa-calendar-check"></i> Agendar Diagnóstico AI-First</h2>
+                <p>Preencha o formulário abaixo e nossa equipe entrará em contato em até 24 horas</p>
+                
+                <form id="contactForm" action="https://formspree.io/f/xzznnovp" method="POST">
+                    <div class="form-group">
+                        <label for="nome"><i class="fas fa-user"></i> Nome Completo *</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> E-mail Corporativo *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone"><i class="fas fa-phone"></i> Telefone *</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="empresa"><i class="fas fa-building"></i> Empresa *</label>
+                        <input type="text" id="empresa" name="empresa" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cargo"><i class="fas fa-briefcase"></i> Cargo *</label>
+                        <select id="cargo" name="cargo" required>
+                            <option value="">Selecione seu cargo</option>
+                            <option value="CEO/Founder">CEO/Founder</option>
+                            <option value="Head de Vendas">Head de Vendas</option>
+                            <option value="Head de Revenue">Head de Revenue</option>
+                            <option value="Diretor Comercial">Diretor Comercial</option>
+                            <option value="Gerente de Vendas">Gerente de Vendas</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tamanho_time"><i class="fas fa-users"></i> Tamanho do Time Comercial *</label>
+                        <select id="tamanho_time" name="tamanho_time" required>
+                            <option value="">Selecione</option>
+                            <option value="1-5">1-5 pessoas</option>
+                            <option value="6-10">6-10 pessoas</option>
+                            <option value="11-20">11-20 pessoas</option>
+                            <option value="21-50">21-50 pessoas</option>
+                            <option value="50+">50+ pessoas</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem"><i class="fas fa-comment"></i> Conte-nos sobre seus principais desafios</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Descreva brevemente os principais desafios do seu time de vendas..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form-submit">
+                        <i class="fas fa-paper-plane"></i> Enviar Solicitação
+                    </button>
+                    
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <h2 class="section-title">Blog TYR</h2>
+            <p class="section-subtitle">Conteúdo exclusivo sobre automação, IA e vendas B2B</p>
+            
+            <div class="blog-grid">
+                <!-- Posts serão carregados dinamicamente via blog-loader.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>Pronto para Transformar seu Processo de Vendas?</h2>
+            <p>TYR está pronta para ajudar você a reduzir custos e aumentar eficiência do seu time comercial.</p>
+            <a href="#agendar" class="cta-button"><i class="fas fa-calendar-check"></i> Agendar Diagnóstico AI-First</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span><i class="fas fa-shield-alt"></i> Como funciona a segurança dos dados?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Segurança é prioridade na TYR. Trabalhamos com criptografia de ponta a ponta, acesso restrito e seguimos as melhores práticas de proteção de dados. Seus dados comerciais permanecem sob seu controle e nunca são compartilhados com terceiros.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span><i class="fas fa-dollar-sign"></i> Qual o investimento necessário?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O investimento varia conforme a complexidade e escopo do projeto. Começamos com um Diagnóstico AI-First pago que identifica oportunidades e define o roadmap. Após o diagnóstico, apresentamos propostas customizadas com valores claros e ROI projetado.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span><i class="fas fa-robot"></i> A IA funciona em produção real?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim. A TYR utiliza modelos de IA testados e validados em produção. Todos os agentes passam por testes rigorosos antes de serem implementados. Além disso, monitoramos continuamente o desempenho e ajustamos conforme necessário.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span><i class="fas fa-clock"></i> Quanto tempo para ver resultados?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Primeiros resultados mensuráveis aparecem entre 30 e 60 dias após a implementação. O tempo varia conforme a complexidade do processo e o escopo da automação. Durante o diagnóstico, definimos prazos realistas para cada etapa.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span><i class="fas fa-plug"></i> Preciso mudar meu CRM ou ferramentas atuais?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Na maioria dos casos, não. A TYR trabalha com integrações que se conectam às suas ferramentas existentes (CRM, email, WhatsApp, etc.). Só recomendamos mudanças quando realmente faz sentido para o resultado final.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span><i class="fas fa-headset"></i> Como é o suporte após a implementação?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A TYR oferece suporte contínuo durante a operação. Treinamos seu time, monitoramos resultados e fazemos ajustes conforme necessário. O objetivo é garantir que tudo funcione perfeitamente e entregue valor constante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="LOGO BRANCO.svg" alt="TYR Logo" style="height: 90px;">
+                </div>
+                <p>&copy; 2024 TYR. Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Formulário de contato
+        const form = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitButton = form.querySelector('.form-submit');
+            const originalText = submitButton.innerHTML;
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            submitButton.disabled = true;
+
+            try {
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    formMessage.className = 'form-message success';
+                    formMessage.innerHTML = '<i class="fas fa-check-circle"></i> Mensagem enviada com sucesso! Nossa equipe entrará em contato em breve.';
+                    form.reset();
+                } else {
+                    throw new Error('Erro ao enviar formulário');
+                }
+            } catch (error) {
+                formMessage.className = 'form-message error';
+                formMessage.innerHTML = '<i class="fas fa-exclamation-circle"></i> Erro ao enviar mensagem. Por favor, tente novamente ou entre em contato diretamente.';
+            } finally {
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+                
+                // Scroll para a mensagem
+                formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        });
+
+        // Animação ao scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Aplicar animação aos elementos
+        document.querySelectorAll('.problema-item, .framework-item, .entregavel-item, .resultado-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+    <script src="blog-loader.js"></script>
+</body>
+</html>

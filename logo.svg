@@ -1,0 +1,24 @@
+<svg width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tyrGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#357ABD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E5C8A;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background white -->
+  <rect width="120" height="60" fill="#FFFFFF" rx="4"/>
+  
+  <!-- T -->
+  <text x="8" y="42" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="url(#tyrGradient)" filter="url(#shadow)">T</text>
+  
+  <!-- Y -->
+  <text x="42" y="42" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="url(#tyrGradient)" filter="url(#shadow)">Y</text>
+  
+  <!-- R -->
+  <text x="72" y="42" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="url(#tyrGradient)" filter="url(#shadow)">R</text>
+</svg>
