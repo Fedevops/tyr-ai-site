@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TYR — Proposta Comercial | Consultoria AI-First (Vendas/SDR)</title>
+
+  <!-- Brand fonts (manual): Orbitron (títulos) + Montserrat (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      /* TYR palette (manual) */
+      --blue-900:#154FA1;
+      --blue-700:#2D4ED8;
+      --blue-500:#3672F8;
+      --gray-400:#A1A1A1;
+      --white:#FFFFFF;
+      --near-white:#FEFEFE;
+
+      --bg:#070A10;
+      --card:rgba(255,255,255,.06);
+      --card2:rgba(255,255,255,.09);
+      --stroke:rgba(255,255,255,.12);
+      --text:#EAF0FF;
+      --muted:rgba(234,240,255,.72);
+      --muted2:rgba(234,240,255,.55);
+
+      --radius:20px;
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --shadow2: 0 10px 30px rgba(0,0,0,.35);
+
+      --h-font: "Orbitron", system-ui, sans-serif;
+      --b-font: "Montserrat", system-ui, sans-serif;
+
+      --pageW: 210mm;
+      --pageH: 297mm;
+      --pad: 18mm;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--b-font);
+      color:var(--text);
+      background:
+        radial-gradient(1000px 700px at 15% 10%, rgba(54,114,248,.22), transparent 60%),
+        radial-gradient(900px 650px at 85% 20%, rgba(45,78,216,.18), transparent 55%),
+        radial-gradient(900px 700px at 60% 90%, rgba(21,79,161,.18), transparent 60%),
+        linear-gradient(180deg, #05060A 0%, #070A10 55%, #04050A 100%);
+      overflow-x:hidden;
+    }
+
+    /* Top controls (not printed) */
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(6,8,14,.6);
+      border-bottom:1px solid var(--stroke);
+    }
+    .topbar-inner{
+      max-width: 1100px; margin:0 auto;
+      padding:12px 18px;
+      display:flex; align-items:center; gap:12px; justify-content:space-between;
+    }
+    .brand-mini{display:flex; align-items:center; gap:10px}
+    .brand-mini img{width:34px; height:34px; object-fit:contain}
+    .brand-mini .t{font-family:var(--h-font); letter-spacing:.08em; font-size:13px}
+    .actions{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .btn{
+      appearance:none; border:1px solid var(--stroke);
+      background: linear-gradient(135deg, rgba(54,114,248,.22), rgba(45,78,216,.14));
+      color:var(--text);
+      padding:10px 12px; border-radius:14px;
+      font-weight:600; font-size:13px;
+      cursor:pointer;
+      box-shadow: var(--shadow2);
+      transition: transform .12s ease, border-color .12s ease, background .12s ease;
+    }
+    .btn:hover{transform: translateY(-1px); border-color: rgba(54,114,248,.45)}
+    .btn.secondary{
+      background: rgba(255,255,255,.06);
+    }
+
+    /* Page container */
+    .deck{
+      max-width: 1100px;
+      margin: 24px auto 80px;
+      padding: 0 18px;
+      display:flex;
+      flex-direction:column;
+      gap:22px;
+    }
+
+    /* A4 pages */
+    .page{
+      position:relative;
+      width: min(100%, var(--pageW));
+      min-height: var(--pageH);
+      margin: 0 auto;
+      padding: var(--pad);
+      border:1px solid var(--stroke);
+      border-radius: 24px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03)),
+        radial-gradient(900px 550px at 20% 20%, rgba(54,114,248,.12), transparent 55%),
+        radial-gradient(850px 520px at 80% 25%, rgba(45,78,216,.10), transparent 55%),
+        rgba(255,255,255,.02);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+
+    .page:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(500px 220px at 12% 6%, rgba(54,114,248,.24), transparent 70%),
+        radial-gradient(550px 260px at 88% 18%, rgba(45,78,216,.22), transparent 70%);
+      opacity:.45;
+      pointer-events:none;
+    }
+
+    .page > *{position:relative; z-index:2}
+
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      color:var(--muted);
+      font-weight:600;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-size:12px;
+    }
+    .dot{
+      width:8px;height:8px;border-radius:999px;
+      background: linear-gradient(135deg, var(--blue-500), var(--blue-700));
+      box-shadow: 0 0 0 4px rgba(54,114,248,.14);
+    }
+
+    h1,h2,h3{
+      font-family:var(--h-font);
+      letter-spacing:.02em;
+      margin: 10px 0 10px;
+    }
+    h1{font-size: 34px; line-height:1.15}
+    h2{font-size: 24px}
+    h3{font-size: 17px}
+
+    p{margin:0 0 10px; color:var(--muted); line-height:1.6}
+    .muted2{color:var(--muted2)}
+    .small{font-size:12px}
+
+    .row{display:flex; gap:16px; flex-wrap:wrap}
+    .col{flex:1; min-width: 280px}
+
+    .card{
+      background: var(--card);
+      border:1px solid var(--stroke);
+      border-radius: var(--radius);
+      padding:14px;
+    }
+    .card strong{color:var(--text)}
+    .grid2{display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:14px}
+    .grid3{display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:14px}
+    @media (max-width:820px){
+      .grid2,.grid3{grid-template-columns:1fr}
+      h1{font-size:28px}
+      .page{border-radius:18px}
+    }
+
+    .hero{
+      display:flex; gap:18px; align-items:flex-start; justify-content:space-between;
+    }
+    .hero .left{flex: 1; min-width: 280px}
+    .hero .right{
+      width: 320px; min-width: 260px;
+      display:flex; flex-direction:column; gap:12px;
+      align-items:flex-end;
+      text-align:right;
+    }
+    .hero-logo{
+      width: 220px; max-width:100%;
+      filter: drop-shadow(0 18px 28px rgba(0,0,0,.35));
+      opacity:.98;
+      object-fit:contain;
+    }
+
+    .pill{
+      display:inline-flex; gap:8px; align-items:center;
+      padding:9px 12px;
+      border-radius: 999px;
+      border:1px solid rgba(54,114,248,.35);
+      background: rgba(54,114,248,.10);
+      color: var(--text);
+      font-weight:600;
+      font-size:12px;
+    }
+
+    .list{
+      margin:0; padding-left: 18px;
+      color:var(--muted);
+      line-height:1.75;
+    }
+
+    .hr{
+      height:1px; background: var(--stroke);
+      margin: 14px 0;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius: 12px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.05);
+      font-weight:700;
+      font-size:12px;
+    }
+
+    .price{
+      font-family: var(--h-font);
+      font-size: 22px;
+      letter-spacing:.03em;
+      margin-top:4px;
+    }
+
+    .table{
+      width:100%;
+      border-collapse:separate;
+      border-spacing:0;
+      overflow:hidden;
+      border-radius: 16px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.04);
+    }
+    .table th, .table td{
+      padding:12px 12px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      vertical-align:top;
+      font-size:13px;
+      color:var(--muted);
+    }
+    .table th{
+      text-align:left;
+      color: var(--text);
+      background: rgba(255,255,255,.05);
+      font-family: var(--h-font);
+      letter-spacing:.04em;
+      font-size:12px;
+      text-transform:uppercase;
+    }
+    .table tr:last-child td{border-bottom:none}
+
+    .footer{
+      position:absolute;
+      left: var(--pad);
+      right: var(--pad);
+      bottom: 12mm;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      color: var(--muted2);
+      font-size: 11px;
+      border-top: 1px solid rgba(255,255,255,.10);
+      padding-top: 8px;
+    }
+
+    .page-no{
+      font-family: var(--h-font);
+      letter-spacing:.10em;
+      color: rgba(234,240,255,.55);
+      font-size: 11px;
+    }
+
+    /* Print */
+    @media print{
+      body{background:#fff}
+      .topbar{display:none !important}
+      .deck{margin:0; padding:0}
+      .page{
+        width: var(--pageW);
+        min-height: var(--pageH);
+        margin: 0;
+        border:none;
+        border-radius:0;
+        box-shadow:none;
+        background: #0B1020; /* dark premium */
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        page-break-after: always;
+      }
+      .page:last-child{page-break-after: auto}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top bar (screen only) -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-mini">
+        <img src="LOGO AZUL.png" alt="TYR" />
+        <div class="t">TYR • Proposta Comercial</div>
+      </div>
+      <div class="actions">
+        <button class="btn secondary" onclick="window.scrollTo({top:0, behavior:'smooth'})">Topo</button>
+        <button class="btn" onclick="window.print()">Exportar / Imprimir PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="deck">
+
+    <!-- PAGE 1: Cover -->
+    <section class="page" id="p1">
+      <div class="hero">
+        <div class="left">
+          <div class="kicker"><span class="dot"></span> Proposta Comercial • Consultoria AI-First</div>
+          <h1>Vendas mais previsíveis com<br/>automação + IA — ROI em 30–60 dias</h1>
+          <p>
+            Esta proposta apresenta como a <strong>TYR</strong> redesenha o processo comercial como se a IA fosse nativa,
+            reduzindo esforço manual do time de SDR, melhorando qualificação e garantindo controle de custo.
+          </p>
+
+          <div class="row" style="margin-top:12px">
+            <div class="pill">Framework A.R.C.O. (Analisar → Redesenhar → Construir → Operar)</div>
+            <div class="pill">B2B • SDR • CRM • Automação</div>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="grid2">
+            <div class="card">
+              <div class="badge">Cliente</div>
+              <p class="muted2 small" style="margin-top:6px">[Nome do Cliente] • [Segmento] • [Cidade/País]</p>
+              <p class="muted2 small">Responsável: [Nome] • Cargo: [Cargo]</p>
+            </div>
+            <div class="card">
+              <div class="badge">TYR</div>
+              <p class="muted2 small" style="margin-top:6px">Proponente: Fernando • Consultoria AI-First</p>
+              <p class="muted2 small">Contato: [email] • [whatsapp] • [site]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <img class="hero-logo" src="LOGO AZUL.png" alt="TYR logo" />
+          <div class="card" style="width:100%">
+            <h3 style="margin-top:0">Resumo executivo</h3>
+            <ul class="list">
+              <li>Diagnóstico AI-First em 7–10 dias</li>
+              <li>Implementação em 2–8 semanas</li>
+              <li>Operação contínua (AI Ops)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>Confidencial • Uso restrito ao cliente</div>
+        <div class="page-no">PÁG 01</div>
+      </div>
+    </section>
+
+    <!-- PAGE 2: Index -->
+    <section class="page" id="p2">
+      <div class="kicker"><span class="dot"></span> Sumário</div>
+      <h2>O que você vai ver</h2>
+
+      <div class="grid2" style="margin-top:10px">
+        <div class="card">
+          <h3>1. Sobre a TYR</h3>
+          <p class="muted2">Quem somos, posicionamento e por que AI-First.</p>
+          <div class="hr"></div>
+          <h3>2. Contexto do cliente</h3>
+          <p class="muted2">Diagnóstico inicial, dores e objetivos de negócio.</p>
+          <div class="hr"></div>
+          <h3>3. Abordagem</h3>
+          <p class="muted2">Framework A.R.C.O. e como aplicamos em Vendas/SDR.</p>
+        </div>
+
+        <div class="card">
+          <h3>4. Serviços</h3>
+          <p class="muted2">Diagnóstico, Quick Wins, Squad e AI Ops.</p>
+          <div class="hr"></div>
+          <h3>5. Cases</h3>
+          <p class="muted2">Exemplos e resultados (preencher com seus casos).</p>
+          <div class="hr"></div>
+          <h3>6. Investimento</h3>
+          <p class="muted2">Preço, escopo, pagamento e cronograma.</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>TYR • Proposta Comercial</div>
+        <div class="page-no">PÁG 02</div>
+      </div>
+    </section>
+
+    <!-- PAGE 3: About TYR -->
+    <section class="page" id="p3">
+      <div class="kicker"><span class="dot"></span> Sobre a TYR</div>
+      <h2>Simplificar processos e impulsionar resultados com tecnologia</h2>
+      <p>
+        A TYR nasce com o propósito de simplificar processos e impulsionar resultados por meio da tecnologia,
+        transmitindo confiança, inovação e profissionalismo em todas as entregas. :contentReference[oaicite:1]{index=1}
+      </p>
+
+      <div class="grid3" style="margin-top:10px">
+        <div class="card">
+          <div class="badge">Foco</div>
+          <p style="margin-top:8px">
+            Vendas B2B • SDR • Eficiência comercial • Automação + IA aplicada ao processo.
+          </p>
+        </div>
+        <div class="card">
+          <div class="badge">Método</div>
+          <p style="margin-top:8px">
+            Framework A.R.C.O.: análise de ROI, redesign do funil e implementação com governança.
+          </p>
+        </div>
+        <div class="card">
+          <div class="badge">Princípios</div>
+          <ul class="list" style="margin-top:8px">
+            <li>ROI e previsibilidade</li>
+            <li>Controle de custo (tokens/uso)</li>
+            <li>Segurança e rastreabilidade</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>TYR • Consultoria AI-First</div>
+        <div class="page-no">PÁG 03</div>
+      </div>
+    </section>
+
+    <!-- PAGE 4: Client problem -->
+    <section class="page" id="p4">
+      <div class="kicker"><span class="dot"></span> Contexto do Cliente</div>
+      <h2>O desafio que vamos resolver</h2>
+      <p class="muted2">
+        (Preencher com informações reais do cliente após a call de descoberta.)
+      </p>
+
+      <div class="grid2" style="margin-top:10px">
+        <div class="card">
+          <h3>Dores comuns em SDR</h3>
+          <ul class="list">
+            <li>Follow-up manual e inconsistente</li>
+            <li>Leads mal qualificados / desperdício de esforço</li>
+            <li>CRM desatualizado / sem rastreabilidade</li>
+            <li>Baixa personalização nas abordagens</li>
+            <li>Custo alto por reunião / baixa previsibilidade</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Objetivos de negócio</h3>
+          <ul class="list">
+            <li>Aumentar reuniões qualificadas</li>
+            <li>Reduzir tempo gasto em tarefas repetitivas</li>
+            <li>Padronizar cadências e registros</li>
+            <li>Garantir controle de custo e qualidade</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>Confidencial • [Nome do Cliente]</div>
+        <div class="page-no">PÁG 04</div>
+      </div>
+    </section>
+
+    <!-- PAGE 5: Solution -->
+    <section class="page" id="p5">
+      <div class="kicker"><span class="dot"></span> Solução</div>
+      <h2>Aplicamos automação + IA diretamente no processo comercial</h2>
+      <p>
+        Não vendemos “chatbot”. Redesenhamos o processo para que o time humano foque no que gera receita,
+        enquanto agentes e automações executam tarefas repetitivas com governança e métricas.
+      </p>
+
+      <div class="grid3" style="margin-top:10px">
+        <div class="card">
+          <h3>Antes</h3>
+          <ul class="list">
+            <li>SDR lê lead, pesquisa e decide</li>
+            <li>Escreve e-mails manualmente</li>
+            <li>Atualiza CRM com atraso</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Depois</h3>
+          <ul class="list">
+            <li>Agente resume lead e sugere abordagem</li>
+            <li>Cadência automatizada com aprovação</li>
+            <li>CRM atualizado em tempo real</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Resultado</h3>
+          <ul class="list">
+            <li>+30–50% produtividade</li>
+            <li>Menos esforço manual</li>
+            <li>Mais previsibilidade</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>TYR • Solução AI-First</div>
+        <div class="page-no">PÁG 05</div>
+      </div>
+    </section>
+
+    <!-- PAGE 6: ARCO framework -->
+    <section class="page" id="p6">
+      <div class="kicker"><span class="dot"></span> Método</div>
+      <h2>Framework A.R.C.O.</h2>
+      <p class="muted2">Um método com começo, meio e fim — feito para gerar ROI e reduzir risco.</p>
+
+      <div class="grid2" style="margin-top:10px">
+        <div class="card">
+          <h3>A — Analisar</h3>
+          <p>Mapeamos funil, cadências, ferramentas e custo por etapa. Entregamos ROI + quick wins.</p>
+          <div class="hr"></div>
+          <h3>R — Redesenhar</h3>
+          <p>Redesenhamos o processo como se IA fosse nativa: humano onde importa, automação onde repete.</p>
+        </div>
+        <div class="card">
+          <h3>C — Construir</h3>
+          <p>Implementamos agentes, integrações e dashboards com logs, limites e governança.</p>
+          <div class="hr"></div>
+          <h3>O — Operar</h3>
+          <p>AI Ops: otimização contínua, qualidade, custo e evolução mensal com relatório de ROI.</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>TYR • Framework A.R.C.O.</div>
+        <div class="page-no">PÁG 06</div>
+      </div>
+    </section>
+
+    <!-- PAGE 7: Services -->
+    <section class="page" id="p7">
+      <div class="kicker"><span class="dot"></span> Serviços</div>
+      <h2>O que entregamos</h2>
+
+      <table class="table" style="margin-top:12px">
+        <thead>
+          <tr>
+            <th>Serviço</th>
+            <th>O que inclui</th>
+            <th>Prazo</th>
+            <th>Investimento</th>
+            <th>Cobrança</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Diagnóstico AI-First</strong></td>
+            <td>Mapeamento + matriz ROI + roadmap 30/60/90 + proposta de execução</td>
+            <td>7–10 dias</td>
+            <td><strong>R$ 7k–15k</strong></td>
+            <td>100% antecipado</td>
+          </tr>
+          <tr>
+            <td><strong>Quick Wins</strong></td>
+            <td>1–2 agentes + automação CRM + integrações + dashboard básico</td>
+            <td>2–3 semanas</td>
+            <td><strong>R$ 15k–30k</strong></td>
+            <td>50% início / 50% entrega</td>
+          </tr>
+          <tr>
+            <td><strong>Squad AI-First</strong></td>
+            <td>2–4 agentes + RAG + orquestração + governança + treinamento</td>
+            <td>4–8 semanas</td>
+            <td><strong>R$ 30k–80k</strong></td>
+            <td>30% / 40% / 30%</td>
+          </tr>
+          <tr>
+            <td><strong>AI Ops (Retainer)</strong></td>
+            <td>Otimização, custo, qualidade, upgrades e relatório mensal de ROI</td>
+            <td>Mensal</td>
+            <td><strong>R$ 3k–10k/mês</strong></td>
+            <td>Mensal antecipado</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="footer">
+        <div>Escopo pode ser ajustado por ICP e maturidade</div>
+        <div class="page-no">PÁG 07</div>
+      </div>
+    </section>
+
+    <!-- PAGE 8: Cases (placeholders) -->
+    <section class="page" id="p8">
+      <div class="kicker"><span class="dot"></span> Cases</div>
+      <h2>Resultados e provas (substituir pelos seus cases)</h2>
+      <p class="muted2">Use este modelo para padronizar estudos de caso — mesmo que inicialmente seja “piloto”.</p>
+
+      <div class="grid3" style="margin-top:12px">
+        <div class="card">
+          <h3>Case #1 — [Empresa]</h3>
+          <p class="small muted2">Problema: [ex: follow-up manual / CRM desorganizado]</p>
+          <p class="small muted2">Solução: [agente + automação + cadência]</p>
+          <p class="small"><strong>Resultado:</strong> +X% reuniões • −Y% tempo manual</p>
+        </div>
+        <div class="card">
+          <h3>Case #2 — [Empresa]</h3>
+          <p class="small muted2">Problema: [qualificação fraca / desperdício de leads]</p>
+          <p class="small muted2">Solução: [qualificação AI + roteamento]</p>
+          <p class="small"><strong>Resultado:</strong> +X% taxa de qualificação</p>
+        </div>
+        <div class="card">
+          <h3>Case #3 — [Empresa]</h3>
+          <p class="small muted2">Problema: [cadências inconsistentes]</p>
+          <p class="small muted2">Solução: [cadência automatizada + aprovação]</p>
+          <p class="small"><strong>Resultado:</strong> −Y% custo por reunião</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>Inclua prints, métricas e depoimentos quando tiver</div>
+        <div class="page-no">PÁG 08</div>
+      </div>
+    </section>
+
+    <!-- PAGE 9: Plan 30/60/90 -->
+    <section class="page" id="p9">
+      <div class="kicker"><span class="dot"></span> Plano de Execução</div>
+      <h2>Roadmap 30 / 60 / 90 dias</h2>
+
+      <div class="grid3" style="margin-top:12px">
+        <div class="card">
+          <h3>0–30 dias</h3>
+          <ul class="list">
+            <li>Diagnóstico completo</li>
+            <li>Quick wins prioritários</li>
+            <li>Dashboard inicial de eficiência</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>31–60 dias</h3>
+          <ul class="list">
+            <li>Agentes em produção</li>
+            <li>Integração CRM + cadências</li>
+            <li>Governança e logs</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>61–90 dias</h3>
+          <ul class="list">
+            <li>Otimização (custo/qualidade)</li>
+            <li>Novos agentes por etapa</li>
+            <li>Relatório de ROI e expansão</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>Prazo ajustado conforme stack do cliente</div>
+        <div class="page-no">PÁG 09</div>
+      </div>
+    </section>
+
+    <!-- PAGE 10: Pricing & payment -->
+    <section class="page" id="p10">
+      <div class="kicker"><span class="dot"></span> Investimento</div>
+      <h2>Preço e forma de pagamento</h2>
+      <p class="muted2">Escolha um modelo (fixo por projeto ou assinatura). Você pode deixar 2 opções e o cliente escolhe.</p>
+
+      <div class="grid2" style="margin-top:12px">
+        <div class="card">
+          <div class="badge">Opção A — Projeto + Retainer</div>
+          <div class="price">R$ [XX.XXX] + R$ [X.XXX]/mês</div>
+          <p class="small muted2">Indicado quando você entrega implementação completa e opera continuamente.</p>
+          <div class="hr"></div>
+          <ul class="list">
+            <li>Implementação (Quick Wins ou Squad)</li>
+            <li>AI Ops mensal (3 meses mínimo)</li>
+            <li>Relatório mensal de ROI</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="badge">Opção B — Fases (Diagnóstico + Execução)</div>
+          <div class="price">R$ [X.XXX] + R$ [XX.XXX]</div>
+          <p class="small muted2">Indicado para iniciar com risco baixo e evoluir por etapas.</p>
+          <div class="hr"></div>
+          <ul class="list">
+            <li>Diagnóstico 100% antecipado</li>
+            <li>Execução: 50% início / 50% entrega</li>
+            <li>Upgrade opcional para AI Ops</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3>Condições</h3>
+        <div class="grid2">
+          <div>
+            <p class="small muted2"><strong>Forma:</strong> PIX / Boleto / Transferência</p>
+            <p class="small muted2"><strong>Reajuste:</strong> em contratos mensais acima de 12 meses</p>
+          </div>
+          <div>
+            <p class="small muted2"><strong>Validade da proposta:</strong> 10 dias</p>
+            <p class="small muted2"><strong>Início:</strong> até 7 dias após assinatura e pagamento</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>Valores finais dependem do escopo e integrações</div>
+        <div class="page-no">PÁG 10</div>
+      </div>
+    </section>
+
+    <!-- PAGE 11: Timeline & deliverables -->
+    <section class="page" id="p11">
+      <div class="kicker"><span class="dot"></span> Cronograma</div>
+      <h2>Entregáveis e governança</h2>
+
+      <div class="grid2" style="margin-top:12px">
+        <div class="card">
+          <h3>Entregáveis</h3>
+          <ul class="list">
+            <li>Agentes e automações implementados</li>
+            <li>Documentação + treinamento</li>
+            <li>Logs, métricas e dashboard</li>
+            <li>Políticas de uso (controle de custo)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Requisitos do cliente</h3>
+          <ul class="list">
+            <li>Acesso ao CRM e ferramentas</li>
+            <li>Ponto focal (Vendas/RevOps)</li>
+            <li>Base de conhecimento e cadências</li>
+            <li>Aprovação de conteúdo e tom</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3>Segurança e dados</h3>
+        <p class="muted2 small">
+          Implementamos governança: controle de acesso, logging, versionamento de prompts e limites de uso.
+          Se necessário, operamos com ambientes dedicados e regras de retenção.
+        </p>
+      </div>
+
+      <div class="footer">
+        <div>Governança reduz risco e aumenta previsibilidade</div>
+        <div class="page-no">PÁG 11</div>
+      </div>
+    </section>
+
+    <!-- PAGE 12: FAQ + Next steps -->
+    <section class="page" id="p12">
+      <div class="kicker"><span class="dot"></span> Próximos passos</div>
+      <h2>Como avançamos</h2>
+
+      <div class="grid2" style="margin-top:12px">
+        <div class="card">
+          <h3>FAQ</h3>
+          <p class="small"><strong>Quanto tempo para ver resultado?</strong></p>
+          <p class="small muted2">Quick wins em 2–3 semanas; ganhos consolidados em 30–60 dias.</p>
+          <p class="small"><strong>Como controlam custo de IA?</strong></p>
+          <p class="small muted2">Limites de uso, logs, caching e otimização contínua (AI Ops).</p>
+          <p class="small"><strong>É seguro?</strong></p>
+          <p class="small muted2">Sim, com governança, acesso por perfil e políticas de dados.</p>
+        </div>
+
+        <div class="card">
+          <h3>Próximos passos</h3>
+          <ol class="list">
+            <li>Assinatura da proposta + NDA (se necessário)</li>
+            <li>Pagamento conforme modelo escolhido</li>
+            <li>Kickoff (60 min) + coleta de acessos</li>
+            <li>Diagnóstico (7–10 dias) ou início da implementação</li>
+          </ol>
+          <div class="hr"></div>
+          <h3>Contato</h3>
+          <p class="small muted2">E-mail: [seu-email] • WhatsApp: [seu-whatsapp]</p>
+          <p class="small muted2">Site: [seu-site]</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>TYR • Obrigado</div>
+        <div class="page-no">PÁG 12</div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

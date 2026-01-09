@@ -68,3 +68,4 @@
 - Monitore CTR e impressões
 - Analise comportamento do usuário
 
+
